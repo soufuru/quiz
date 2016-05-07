@@ -14,6 +14,8 @@
 		67DE57061CDD6C02001F198A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DE57041CDD6C02001F198A /* LaunchScreen.storyboard */; };
 		67DE57111CDD6C02001F198A /* Quiz2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE57101CDD6C02001F198A /* Quiz2Tests.swift */; };
 		67DE571C1CDD6C02001F198A /* Quiz2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE571B1CDD6C02001F198A /* Quiz2UITests.swift */; };
+		67DE572A1CDD6E43001F198A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE57291CDD6E43001F198A /* QuizViewController.swift */; };
+		67DE572C1CDD6E57001F198A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE572B1CDD6E57001F198A /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +36,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		67DE56F81CDD6C02001F198A /* Quiz2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67DE56F81CDD6C02001F198A /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DE56FB1CDD6C02001F198A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67DE56FD1CDD6C02001F198A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67DE57001CDD6C02001F198A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67DE57021CDD6C02001F198A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67DE57051CDD6C02001F198A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67DE57071CDD6C02001F198A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67DE570C1CDD6C02001F198A /* Quiz2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Quiz2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67DE570C1CDD6C02001F198A /* Quiz.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Quiz.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DE57101CDD6C02001F198A /* Quiz2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz2Tests.swift; sourceTree = "<group>"; };
 		67DE57121CDD6C02001F198A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67DE57171CDD6C02001F198A /* Quiz2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Quiz2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67DE57171CDD6C02001F198A /* Quiz.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Quiz.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DE571B1CDD6C02001F198A /* Quiz2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz2UITests.swift; sourceTree = "<group>"; };
 		67DE571D1CDD6C02001F198A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67DE57291CDD6E43001F198A /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		67DE572B1CDD6E57001F198A /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = ../ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +81,9 @@
 		67DE56EF1CDD6C02001F198A = {
 			isa = PBXGroup;
 			children = (
-				67DE56FA1CDD6C02001F198A /* Quiz2 */,
-				67DE570F1CDD6C02001F198A /* Quiz2Tests */,
-				67DE571A1CDD6C02001F198A /* Quiz2UITests */,
+				67DE56FA1CDD6C02001F198A /* Quiz */,
+				67DE570F1CDD6C02001F198A /* QuizTests */,
+				67DE571A1CDD6C02001F198A /* QuizUITests */,
 				67DE56F91CDD6C02001F198A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,50 +91,55 @@
 		67DE56F91CDD6C02001F198A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				67DE56F81CDD6C02001F198A /* Quiz2.app */,
-				67DE570C1CDD6C02001F198A /* Quiz2Tests.xctest */,
-				67DE57171CDD6C02001F198A /* Quiz2UITests.xctest */,
+				67DE56F81CDD6C02001F198A /* Quiz.app */,
+				67DE570C1CDD6C02001F198A /* Quiz.xctest */,
+				67DE57171CDD6C02001F198A /* Quiz.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		67DE56FA1CDD6C02001F198A /* Quiz2 */ = {
+		67DE56FA1CDD6C02001F198A /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
 				67DE56FB1CDD6C02001F198A /* AppDelegate.swift */,
 				67DE56FD1CDD6C02001F198A /* ViewController.swift */,
+				67DE57291CDD6E43001F198A /* QuizViewController.swift */,
+				67DE572B1CDD6E57001F198A /* ResultViewController.swift */,
 				67DE56FF1CDD6C02001F198A /* Main.storyboard */,
 				67DE57021CDD6C02001F198A /* Assets.xcassets */,
 				67DE57041CDD6C02001F198A /* LaunchScreen.storyboard */,
 				67DE57071CDD6C02001F198A /* Info.plist */,
 			);
+			name = Quiz;
 			path = Quiz2;
 			sourceTree = "<group>";
 		};
-		67DE570F1CDD6C02001F198A /* Quiz2Tests */ = {
+		67DE570F1CDD6C02001F198A /* QuizTests */ = {
 			isa = PBXGroup;
 			children = (
 				67DE57101CDD6C02001F198A /* Quiz2Tests.swift */,
 				67DE57121CDD6C02001F198A /* Info.plist */,
 			);
+			name = QuizTests;
 			path = Quiz2Tests;
 			sourceTree = "<group>";
 		};
-		67DE571A1CDD6C02001F198A /* Quiz2UITests */ = {
+		67DE571A1CDD6C02001F198A /* QuizUITests */ = {
 			isa = PBXGroup;
 			children = (
 				67DE571B1CDD6C02001F198A /* Quiz2UITests.swift */,
 				67DE571D1CDD6C02001F198A /* Info.plist */,
 			);
+			name = QuizUITests;
 			path = Quiz2UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		67DE56F71CDD6C02001F198A /* Quiz2 */ = {
+		67DE56F71CDD6C02001F198A /* Quiz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67DE57201CDD6C02001F198A /* Build configuration list for PBXNativeTarget "Quiz2" */;
+			buildConfigurationList = 67DE57201CDD6C02001F198A /* Build configuration list for PBXNativeTarget "Quiz" */;
 			buildPhases = (
 				67DE56F41CDD6C02001F198A /* Sources */,
 				67DE56F51CDD6C02001F198A /* Frameworks */,
@@ -140,14 +149,14 @@
 			);
 			dependencies = (
 			);
-			name = Quiz2;
+			name = Quiz;
 			productName = Quiz2;
-			productReference = 67DE56F81CDD6C02001F198A /* Quiz2.app */;
+			productReference = 67DE56F81CDD6C02001F198A /* Quiz.app */;
 			productType = "com.apple.product-type.application";
 		};
-		67DE570B1CDD6C02001F198A /* Quiz2Tests */ = {
+		67DE570B1CDD6C02001F198A /* QuizTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67DE57231CDD6C02001F198A /* Build configuration list for PBXNativeTarget "Quiz2Tests" */;
+			buildConfigurationList = 67DE57231CDD6C02001F198A /* Build configuration list for PBXNativeTarget "QuizTests" */;
 			buildPhases = (
 				67DE57081CDD6C02001F198A /* Sources */,
 				67DE57091CDD6C02001F198A /* Frameworks */,
@@ -158,14 +167,14 @@
 			dependencies = (
 				67DE570E1CDD6C02001F198A /* PBXTargetDependency */,
 			);
-			name = Quiz2Tests;
+			name = QuizTests;
 			productName = Quiz2Tests;
-			productReference = 67DE570C1CDD6C02001F198A /* Quiz2Tests.xctest */;
+			productReference = 67DE570C1CDD6C02001F198A /* Quiz.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		67DE57161CDD6C02001F198A /* Quiz2UITests */ = {
+		67DE57161CDD6C02001F198A /* QuizUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67DE57261CDD6C02001F198A /* Build configuration list for PBXNativeTarget "Quiz2UITests" */;
+			buildConfigurationList = 67DE57261CDD6C02001F198A /* Build configuration list for PBXNativeTarget "QuizUITests" */;
 			buildPhases = (
 				67DE57131CDD6C02001F198A /* Sources */,
 				67DE57141CDD6C02001F198A /* Frameworks */,
@@ -176,9 +185,9 @@
 			dependencies = (
 				67DE57191CDD6C02001F198A /* PBXTargetDependency */,
 			);
-			name = Quiz2UITests;
+			name = QuizUITests;
 			productName = Quiz2UITests;
-			productReference = 67DE57171CDD6C02001F198A /* Quiz2UITests.xctest */;
+			productReference = 67DE57171CDD6C02001F198A /* Quiz.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 67DE56F31CDD6C02001F198A /* Build configuration list for PBXProject "Quiz2" */;
+			buildConfigurationList = 67DE56F31CDD6C02001F198A /* Build configuration list for PBXProject "Quiz" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -217,9 +226,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				67DE56F71CDD6C02001F198A /* Quiz2 */,
-				67DE570B1CDD6C02001F198A /* Quiz2Tests */,
-				67DE57161CDD6C02001F198A /* Quiz2UITests */,
+				67DE56F71CDD6C02001F198A /* Quiz */,
+				67DE570B1CDD6C02001F198A /* QuizTests */,
+				67DE57161CDD6C02001F198A /* QuizUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -256,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67DE572A1CDD6E43001F198A /* QuizViewController.swift in Sources */,
 				67DE56FE1CDD6C02001F198A /* ViewController.swift in Sources */,
 				67DE56FC1CDD6C02001F198A /* AppDelegate.swift in Sources */,
+				67DE572C1CDD6E57001F198A /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,12 +293,12 @@
 /* Begin PBXTargetDependency section */
 		67DE570E1CDD6C02001F198A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 67DE56F71CDD6C02001F198A /* Quiz2 */;
+			target = 67DE56F71CDD6C02001F198A /* Quiz */;
 			targetProxy = 67DE570D1CDD6C02001F198A /* PBXContainerItemProxy */;
 		};
 		67DE57191CDD6C02001F198A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 67DE56F71CDD6C02001F198A /* Quiz2 */;
+			target = 67DE56F71CDD6C02001F198A /* Quiz */;
 			targetProxy = 67DE57181CDD6C02001F198A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -403,8 +414,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Quiz2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = soufuru.Quiz2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = soufuru.Quiz;
+				PRODUCT_NAME = Quiz;
 			};
 			name = Debug;
 		};
@@ -414,8 +425,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Quiz2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = soufuru.Quiz2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = soufuru.Quiz;
+				PRODUCT_NAME = Quiz;
 			};
 			name = Release;
 		};
@@ -426,8 +437,8 @@
 				INFOPLIST_FILE = Quiz2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = soufuru.Quiz2Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quiz2.app/Quiz2";
+				PRODUCT_NAME = Quiz;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quiz.app/Quiz";
 			};
 			name = Debug;
 		};
@@ -438,8 +449,8 @@
 				INFOPLIST_FILE = Quiz2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = soufuru.Quiz2Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quiz2.app/Quiz2";
+				PRODUCT_NAME = Quiz;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quiz.app/Quiz";
 			};
 			name = Release;
 		};
@@ -449,7 +460,7 @@
 				INFOPLIST_FILE = Quiz2UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = soufuru.Quiz2UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Quiz;
 				TEST_TARGET_NAME = Quiz2;
 			};
 			name = Debug;
@@ -460,7 +471,7 @@
 				INFOPLIST_FILE = Quiz2UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = soufuru.Quiz2UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Quiz;
 				TEST_TARGET_NAME = Quiz2;
 			};
 			name = Release;
@@ -468,7 +479,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		67DE56F31CDD6C02001F198A /* Build configuration list for PBXProject "Quiz2" */ = {
+		67DE56F31CDD6C02001F198A /* Build configuration list for PBXProject "Quiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67DE571E1CDD6C02001F198A /* Debug */,
@@ -477,29 +488,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		67DE57201CDD6C02001F198A /* Build configuration list for PBXNativeTarget "Quiz2" */ = {
+		67DE57201CDD6C02001F198A /* Build configuration list for PBXNativeTarget "Quiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67DE57211CDD6C02001F198A /* Debug */,
 				67DE57221CDD6C02001F198A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		67DE57231CDD6C02001F198A /* Build configuration list for PBXNativeTarget "Quiz2Tests" */ = {
+		67DE57231CDD6C02001F198A /* Build configuration list for PBXNativeTarget "QuizTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67DE57241CDD6C02001F198A /* Debug */,
 				67DE57251CDD6C02001F198A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		67DE57261CDD6C02001F198A /* Build configuration list for PBXNativeTarget "Quiz2UITests" */ = {
+		67DE57261CDD6C02001F198A /* Build configuration list for PBXNativeTarget "QuizUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67DE57271CDD6C02001F198A /* Debug */,
 				67DE57281CDD6C02001F198A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
